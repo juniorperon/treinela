@@ -48,10 +48,6 @@
                         <input type="text" class="form-control" id="nome" name="nome" required>
                     </div>
                     <div class="mb-4">
-                        <label for="descricao" class="form-label">Descricao</label>
-                        <input type="text" class="form-control" id="descricao" name="descricao" required>
-                    </div>
-                    <div class="mb-4">
                         <label for="urlFoto" class="form-label">Url Foto</label>
                         <input type="text" class="form-control" id="urlFoto" name="urlFoto" required>
                     </div>
@@ -69,6 +65,17 @@
             </div>
         </div>
     </div>
+
+    <script type="text/javascript" src="helpers.js"></script>
+
+    <script>
+      const token = readCookie("token");
+      if (token === '') {
+        location.href = "/index.html";
+      }
+    </script>
+
+    <script type="text/javascript" src="cadastro.js"></script>
 
 </body>
 </html>

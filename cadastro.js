@@ -1,5 +1,5 @@
 fetch("https://api-treinela.herokuapp.com/course/", {
-            method: "GET",
+            method: "POST",
             headers: {
                 'Accept': 'application/json',
                 'Content-Type': 'application/json',
@@ -15,3 +15,5 @@ fetch("https://api-treinela.herokuapp.com/course/", {
             //LÓGICA PARA RETURN ERROR
             throw new Error(err);            
         })
+    
+       

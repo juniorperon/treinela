@@ -56,6 +56,17 @@
       <p style="text-decoration: none; color: black; font-size: larger;">Python Básico - Aula 02 </p>
     </div>
 
+    <script type="text/javascript" src="helpers.js"></script>
+
+    <script>
+      const token = readCookie("token");
+      if (token === '') {
+        location.href = "/index.html";
+      }
+    </script>
+
+    <script type="text/javascript" src="cursos.js"></script>
+    <script type="text/javascript" src="jwt-decode.js"></script>
+
   </body>
-  <script src="cursos.js"></script>
 </html>
